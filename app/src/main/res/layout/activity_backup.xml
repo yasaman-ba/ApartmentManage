@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/myToolbar"
+                layout="@layout/my_toolbar" />
+
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout1_backup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout6">
+
+        <TextView
+            android:id="@+id/tv_backup_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="Enter a name for backup file" />
+
+        <EditText
+            android:id="@+id/edt_backup_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:hint="Enter here ..." />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout2_backup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1_backup">
+
+        <Button
+            android:id="@+id/btn_backup"
+            android:background="@drawable/btn_back"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="Update" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
