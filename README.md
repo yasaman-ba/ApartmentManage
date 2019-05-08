@@ -5,7 +5,7 @@ Add apartment data and cost
 
 Apartment manage app with limited functions.
 
-you can add some primary data about apartment and it's costs. 
+You can add some primary data about apartment and it's costs. 
 
 **********
 
